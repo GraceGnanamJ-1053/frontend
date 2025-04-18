@@ -11,7 +11,7 @@ function AddProduct(){
         const saveProduct = async (e) => {
             e.preventDefault()
             try {
-                const response = await axios.post('http://localhost:8000/addProduct', { name, quantity, price });
+                const response = await axios.post('https://backend-e7yx.onrender.com/addProduct', { name, quantity, price });
                 toast.success(response.data.message);
             } catch (error) {
                 console.log(error);

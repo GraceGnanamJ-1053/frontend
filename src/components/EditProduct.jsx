@@ -13,7 +13,7 @@ function EditProduct(){
     },[])
     const findProduct =async ()=>{
         try{
-            const response = await axios.get(`http://localhost:8000/findProduct/${id}`)
+            const response = await axios.get(`https://backend-e7yx.onrender.com/findProduct/${id}`)
             setName(response.data.name)
             setQuantity(response.data.quantity)
             setPrice(response.data.price)
@@ -25,7 +25,7 @@ function EditProduct(){
     const updateProduct = async (e)=>{
         e.preventDefault()
         try{
-            const response = await axios.put(`http://localhost:8000/editProduct/${id}`,{name, quantity, price})
+            const response = await axios.put(`https://backend-e7yx.onrender.com/editProduct/${id}`,{name, quantity, price})
             toast.success(response.data.message)
         }catch(err){
             console.log(err)
