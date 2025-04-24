@@ -44,7 +44,7 @@ function Dashboard(){
     return(
         <div>
             <h1 className="text-center font-bold text-2xl text-purple-500">
-                Fuel cost Savings
+               
             </h1>
             <table className="border border-gray-400 w-[80%] mx-auto mt-8">
                 <caption className="text-left mb-4">
